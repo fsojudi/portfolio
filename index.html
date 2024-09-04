@@ -3,54 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Fsojudi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cover Page</title>
+    <!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    /* Extra styling to position the image */
+    .split-container {
+        position: relative;
+    }
+
+    .split-container img {
+        position: absolute;
+        top: 30%;
+        left: 66%;
+        transform: translate(-50%, -50%);
+        border: 5px solid white; /* Optional: Adds a border to the image */
+        z-index: 10;
+    }
+</style>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Fsojudi, a passionate frontend developer with a love for creating interactive and responsive web applications. I have experience working with HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1: Personal Blog</h3>
-            <p>This is a blog platform I built using React and Node.js. It features a custom CMS, user authentication, and responsive design.</p>
-            <a href="https://github.com/fsojudi/personal-blog" target="_blank">View on GitHub</a>
+    <!-- Main Content -->
+    <main class="flex-grow flex split-container">
+        <!-- Left Part (larger) -->
+        <div class="w-2/3 flex items-center justify-center bg-indigo-700">
+            <div class="text-center">
+                <h2 class="text-4xl text-lime-200 font-bold">Fatemeh Sojudi</h2>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2: E-commerce Store</h3>
-            <p>An e-commerce website built with Vue.js and Firebase. It includes real-time data updates, shopping cart functionality, and secure payments.</p>
-            <a href="https://github.com/fsojudi/e-commerce-store" target="_blank">View on GitHub</a>
+        <!-- Right Part (smaller) -->
+        <div class="w-1/3 flex items-center justify-center  bg-lime-200">
+            <p class="text-lg text-gray-700">This is the smaller section.</p>
         </div>
-        <!-- Add more projects as needed -->
-    </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
-        <ul>
-            <li>Email: <a href="mailto:fsojudi@example.com">fsojudi@example.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/fsojudi" target="_blank">linkedin.com/in/fsojudi</a></li>
-        </ul>
-    </section>
+        <img src="IMG_1921 Large.jpeg" alt="Fsojudi" class="rounded-full w-40 md:w-48 lg:w-70 ">
 
-    <footer>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
         <p>&copy; 2024 Fsojudi. All Rights Reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
