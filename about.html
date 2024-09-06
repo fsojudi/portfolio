@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Fatemeh Sojudi</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Additional styling for the background and card effects */
+        body {
+            background-image: linear-gradient(to right, #e0f7fa, #e1bee7);
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white p-3 shadow-md sticky top-0 z-20">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo or Site Title -->
+            <img src="images/94086-200.png" alt="Fsojudi" class="rounded-full w-12 ml-10">
+
+            <!-- Navigation Menu -->
+            <nav class="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-16 xl:space-x-20 mr-10">
+                <a href="index.html" class="text-indigo-700 hover:text-purple-600 font-medium transition duration-300">Home</a>
+                <a href="about.html" class="text-indigo-700 hover:text-purple-600 font-medium transition duration-300">About</a>
+                <a href="projects.html" class="text-indigo-700 hover:text-purple-600 font-medium transition duration-300">Projects</a>
+                <a href="contact.html" class="text-indigo-700 hover:text-purple-600 font-medium transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto p-6">
+        <!-- About Me Section -->
+        <section class="card mb-8">
+            <h1 class="text-4xl font-bold text-indigo-700 mb-4">About Me</h1>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                I am a dedicated and innovative frontend developer with a passion for crafting beautiful, intuitive, and functional user interfaces. With a strong foundation in modern web technologies and a keen eye for design, I specialize in creating seamless user experiences that captivate and engage.
+
+                My journey in web development began with a fascination for technology and a drive to bring creative ideas to life. Over the years, I have honed my skills in frameworks like Angular and React, leveraging their power to build dynamic, responsive applications that meet the needs of users and clients alike.
+                
+                I thrive in collaborative environments where ideas are shared and innovation is encouraged. My approach to development is rooted in understanding user needs, translating them into elegant design solutions, and ensuring that every detail is meticulously executed. I am particularly drawn to projects that challenge the norm and offer opportunities to push the boundaries of what’s possible on the web.
+                
+                Whether working on complex enterprise applications or small-scale projects, I am committed to delivering high-quality results that not only meet technical requirements but also enhance the overall user experience. I am always eager to learn and adapt to new technologies, striving to stay at the forefront of the ever-evolving web development landscape.
+                
+                When I’m not coding, you can find me exploring the latest trends in web design, participating in tech meetups, or experimenting with new tools and techniques. I am excited about the possibility of bringing my skills and enthusiasm to new and exciting projects, and I look forward to collaborating with like-minded professionals who share my passion for technology and innovation.
+                
+                
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="card mb-8">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Skills</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li><strong>Frontend:</strong> Angular (10+), React.js, TypeScript, Next.js, Ionic 5 (basic)</li>
+                <li><strong>UI/UX:</strong> HTML, CSS, SASS, UX & UI Design</li>
+                <li><strong>Backend & API:</strong> .NET Core (C#, Web API) (basic), Azure (basic)</li>
+                <li><strong>Other:</strong> Problem-solving, Critical Thinking, Time Management, Agile Methods (Scrum)</li>
+            </ul>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="card mb-8">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Languages</h2>
+            <ul class="text-gray-700 space-y-2">
+                <li><strong>Swedish:</strong> Proficient</li>
+                <li><strong>English:</strong> Good</li>
+                <li><strong>Persian:</strong> Native</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card mb-8">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Education</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-600">Internship at Standout AB, Växjö, Sweden</h3>
+                    <p class="text-gray-700 italic">November 2023 – June 2024</p>
+                    <p class="text-gray-700">Six months of practical experience in the industry, where I applied and developed my skills as a frontend developer.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-600">Frontend Developer, EC Utbildning AB, Växjö, Sweden</h3>
+                    <p class="text-gray-700 italic">August 2022 – June 2024</p>
+                    <p class="text-gray-700">A comprehensive program including courses in HTML, CSS, JavaScript (React, Angular), UX & UI, Agile Project Methods, and Backend (C#).</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-600">IT Extension Program, Lexicon AB, Växjö, Sweden</h3>
+                    <p class="text-gray-700 italic">November 2023 – June 2024</p>
+                    <p class="text-gray-700">An intensive course offering highly practical content in Backend (C#) and JavaScript (React).</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Information Section -->
+        <section class="card mb-8">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Contact Information</h2>
+            <p class="text-gray-700"><strong>Address:</strong> Raskensväg 31, 352 55 Växjö, Sweden</p>
+            <p class="text-gray-700"><strong>Phone:</strong> 0739194126</p>
+            <p class="text-gray-700"><strong>Email:</strong> <a href="mailto:fsojudi@gmail.com" class="text-indigo-600 hover:underline">fsojudi@gmail.com</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-sm text-center p-4 mt-auto">
+        <p>&copy; 2024 Fatemeh Sojudi. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
